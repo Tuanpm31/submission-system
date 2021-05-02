@@ -1,0 +1,32 @@
+{% extends 'base/base.html' %}
+
+{% block title %} Home {% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Submission Form</h3>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" id="forms" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {{ form|crispy }}
+                            <div class="align-items-center d-flex justify-content-center">
+                                <button class="btn btn-primary btn-lg btn-block mt-2"
+                                        type="submit">Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    </script>
+
+{% endblock %}
