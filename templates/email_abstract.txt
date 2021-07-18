@@ -1,0 +1,35 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<body>
+
+  <h3>Kính gửi tác giả,</h3>
+
+  <h3>Dear authors,</h3>
+
+  <p>Bạn đã nộp thành công bản tóm tắt tới Hội nghị quốc tế về Cơ học kỹ thuật và Tự động hóa lần thứ 6 (ICEMA 6). Bạn
+    lưu ý nộp toàn văn cho Hội nghị trước ngày 31/8/2021.</p>
+
+  <p>Your abstract has been successfully submitted to the 6th International Conference on Engineering Mechanics and
+    Automation (ICEMA 2021). Please be reminded that the deadline to submit your full paper is on August 31st, 2021
+  </p>
+
+  <p>Trong trường hợp có bất cứ vấn đề gì vui lòng liên hệ:</p>
+
+  <p>Ms. Phan Thi Cam Ly</p>
+
+  <p>University of Engineering and Technology, VNU</p>
+
+  <p>Room 311, G2 building, 144 Xuan Thuy Road, Cau Giay Dist., Hanoi, Vietnam.</p>
+
+  <p>Phone: (84.24) 37549431</p>
+
+  <p>Email: camlypt@vnu.edu.vn</p>
+
+  <p>Trân trọng.</p>
+
+  <p>Sincerely</p>
+</body>
+
+</html>

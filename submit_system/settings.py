@@ -138,3 +138,10 @@ ADMINS = (
     # ('Your Name', 'your_email@domain.com'),
     ('admin', 'phmtuan313@gmail.com'),
 )
+# email
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = "icema@vnu.edu.vn"
+EMAIL_HOST_PASSWORD = 'changeme'
+EMAIL_PORT = '587'

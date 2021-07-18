@@ -8,12 +8,12 @@ class Paper(models.Model):
         (FULL_PAPER, 'Full Paper'),
         (ABSTRACT, 'Abstract')
     )
-
     submission_type = models.CharField(
         max_length=2,
         choices=SUBMISSION_TYPE_CHOICES,
         default=FULL_PAPER,
     )
+    email = models.EmailField(default=None)
     title = models.TextField()
     abstract = models.TextField()
     paper_file = models.FileField(upload_to="files/")
