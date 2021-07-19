@@ -1,3 +1,5 @@
+from user.models import Authors
+from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 
 from app.forms import SubmissionForm
@@ -19,7 +21,10 @@ def index(request):
     if request.method == "POST":
         form = SubmissionForm(request.POST, request.FILES)
         if form.is_valid():
-            email = form.cleaned_data["email"]
+            paper = form.save(commit=False)
+            author = Authors.objects.get(user=request.user)
+            paper.author = author
+            email = author.user.email
             type = form.cleaned_data["submission_type"]
             if type == "AS":
                 send_mail("Submission success", plain_message_abstract, settings.EMAIL_HOST_USER, [email], html_message=html_message_abstract)

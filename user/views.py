@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 
-from user.forms import RegisterForm
+from user.forms import RegisterForm, UserExtendForm
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.conf import settings
@@ -12,7 +12,7 @@ def register(request):
     plain_message = render_to_string('email_register.txt', { 'context': {} })
 
     if request.method == "POST":
-        form = RegisterForm(request.POST)
+        form = UserExtendForm(request.POST)
         if form.is_valid():
             form.save()
             username = form.cleaned_data['username']
@@ -21,7 +21,7 @@ def register(request):
             messages.success(request, "create user {} success".format(username))
             return redirect("/login")
     else:
-        form = RegisterForm()
+        form = UserExtendForm()
     context = {
         'title': 'Create User',
         'form': form
